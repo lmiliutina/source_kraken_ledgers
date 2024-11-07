@@ -1,0 +1,4 @@
+{
+  "api_url": "https://treasury-stage.thein1.com/internal/integration/v1/dwh/kraken/ledgers",
+  "bearer_token": "your_bearer_token_here"
+}

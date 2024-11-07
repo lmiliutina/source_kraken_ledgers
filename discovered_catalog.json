@@ -1,0 +1,28 @@
+{
+  "type": "CATALOG",
+  "catalog": {
+    "streams": [
+       {
+         "name": "kraken_ledger",
+         "json_schema": {
+           "type": "object",
+           "properties": {
+             "id": {"type": "string"},
+             "aclass": {"type": "string"},
+             "amount": {"type": "number"},
+             "asset": {"type": "string"},
+             "balance": {"type": "number"},
+             "fee": {"type": "number"},
+             "refid": {"type": "string"},
+             "time": {"type": "integer"},
+             "type": {"type": "string"},
+             "subtype": {"type": "string"}
+           }
+         },
+         "supported_sync_modes": ["full_refresh", "incremental"],
+         "source_defined_cursor": true,
+         "default_cursor_field": ["time"]
+       }
+     ]
+  }
+}
